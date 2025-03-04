@@ -23,6 +23,20 @@ const profileInformation = {
     bajin: 'testbajin',
     email: 'test@daniam.am',
     phone: '011111111111',
+    repeatHCH: '0303030303',
+    repeatEmail: 'zaven.sahakyan@daniam.am'
 }
 
-export{profileLocators, profileInformation};
+const profileFields = [
+    { locator: profileLocators.hchField, value: profileInformation.hch },
+    { locator: profileLocators.anunField, value: profileInformation.anun },
+    { locator: profileLocators.azganunField, value: profileInformation.azganun },
+    //{ locator: profileLocators.hayranunField, value: profileInformation.hayranun },
+    { locator: profileLocators.pashtonField, value: profileInformation.pashton },
+    { locator: profileLocators.bajinField, value: profileInformation.bajin },
+    { locator: profileLocators.emailField, value: profileInformation.email },
+    { locator: profileLocators.phoneField, value: profileInformation.phone },
+
+]
+
+export{profileLocators, profileInformation, profileFields};
